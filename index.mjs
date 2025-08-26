@@ -18,7 +18,10 @@ await client.connect();
 async function runQuery() {
   try {
     const result = await client.query('SELECT 1 AS number');
-    console.log('🚀 AUTO-UPDATE TEST - Dummy query result:', result.rows[0].number); // Updated message!
+    console.log(
+      '✨ NEW VERSION 2.0 - Dummy query result:',
+      result.rows[0].number
+    ); // Updated message!
   } catch (err) {
     console.error('Error executing query:', err);
   }
