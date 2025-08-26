@@ -19,7 +19,7 @@ async function runQuery() {
   try {
     const result = await client.query('SELECT 1 AS number');
     console.log(
-      '🎉 FINAL TEST v3.0 - Dummy query result:',
+      '🚀 PUBLIC PACKAGE TEST v4.0 - Dummy query result:',
       result.rows[0].number
     ); // Updated message!
   } catch (err) {
