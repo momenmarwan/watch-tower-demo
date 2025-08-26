@@ -14,10 +14,13 @@ services:
   watchtower:
     image: containrrr/watchtower
     container_name: watchtower-docker
+    privileged: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --interval 30 --cleanup my-app-docker
     environment:
       - WATCHTOWER_POLL_INTERVAL=30
       - WATCHTOWER_CLEANUP=true
+      - REPO_USER=momenmarwan
+      - REPO_PASSWORD=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
     restart: unless-stopped
