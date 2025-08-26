@@ -21,4 +21,6 @@ services:
     environment:
       - WATCHTOWER_POLL_INTERVAL=30
       - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_INCLUDE_RESTARTING=true
+      - WATCHTOWER_NO_RESTART=false
     restart: unless-stopped
